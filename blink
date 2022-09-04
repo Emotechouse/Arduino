@@ -1,0 +1,16 @@
+int led = 7; //assigning led pin
+
+void setup() {
+  Serial.begin(9600); //Starting serial communication
+  pinMode(led, OUTPUT);
+
+}
+
+void loop() {
+  
+  digitalWrite(led, HIGH); //led is on
+  delay(750); // waiting time
+  digitalWrite(led, LOW); //ledd is off
+  delay(750); // waiting time
+
+}
